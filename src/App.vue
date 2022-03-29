@@ -2,6 +2,7 @@
   <Header />
   <Features />
   <Roadmap />
+  <Protocol />
   <Financial />
   <Footer />
 </template>
@@ -10,6 +11,7 @@
 import Header from './components/Header/Header.vue';
 import Features from './components/Features/Features.vue';
 import Roadmap from './components/Roadmap/Roadmap.vue';
+import Protocol from './components/Protocol/Protocol.vue';
 import Footer from './components/Footer/Footer.vue';
 import Financial from './components/Financial/financial.vue';
 
@@ -19,6 +21,7 @@ export default {
     Header,
     Features,
     Roadmap,
+    Protocol,
     Footer,
     Financial,
   },

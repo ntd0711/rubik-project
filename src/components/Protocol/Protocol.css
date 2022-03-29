@@ -1,0 +1,103 @@
+.protocol {
+  width: 100%;
+  padding: 96px 226px 144px;
+  background-color: #F9E67F;
+}
+
+.protocol-label {
+  color: #010416;
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 72px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.protocol-img {
+  box-shadow: 0px 12px 40px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+  object-fit: cover;
+  -o-object-fit: cover;
+}
+
+.protocol-content {
+  width: 90%;
+  color: #1A234A;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 48px;
+  margin: 80px auto 0;
+  text-align: center;
+}
+
+/* Large PC or Laptop */
+@media screen and (max-width: 1199px) {
+  .protocol {
+    padding-inline: 100px;
+  }
+}
+
+/* Small PC or Laptop */
+@media screen and (max-width: 1023px) {
+  .protocol {
+    padding-top: 70px;
+    padding-inline: 90px;
+  }
+
+  .protocol-label {
+    font-size: 46px;
+    line-height: 64px;
+    margin-bottom: 50px;
+  }
+
+  .protocol-content {
+    width: 100%;
+    margin-top: 50px;
+    font-size: 23px;
+    line-height: 42px;
+  }
+}
+
+/* Tablet */
+@media screen and (max-width: 767px) {
+  .protocol {
+    padding: 60px 68px;
+  }
+
+  .protocol-label {
+    margin: 0 auto 40px;
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .protocol-content {
+    margin-top: 40px;
+    font-size: 19px;
+    line-height: 32px;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 479px) {
+  .protocol {
+    padding: 40px 28px;
+  }
+
+  .protocol-label {
+    margin: 0 15px 32px 14px;
+    font-size: 26px;
+    line-height: 40px;
+  }
+
+  .protocol-img {
+    width: 100%;
+  }
+
+  .protocol-content {
+    width: 100%;
+    margin: 0;
+    padding: 32px 9px 0;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

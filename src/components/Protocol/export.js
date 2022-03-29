@@ -1,0 +1,1 @@
+export { default as protocol } from '../../assets/protocol_assets/roadmap.png';
