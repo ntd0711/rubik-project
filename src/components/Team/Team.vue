@@ -98,33 +98,5 @@
       SwiperSlide,
       MemberCard
     },
-    mounted() {
-      /* Set Mmeber On 1 Row */
-      const memberOnRow = 3;
-      /* Copy Array */
-      const positionElementArray = Array.from(document.querySelectorAll('.team-list-wrap .member-position'));
-      const positionLength = Math.ceil(positionElementArray.length / memberOnRow);
-      /* Check Position Element with height='64px' */
-      for(let i = 0; i < positionLength; i++) {
-        const checkElement = positionElementArray.slice(memberOnRow * i, memberOnRow * i + memberOnRow).some(element => element.offsetHeight === 64);
-        if(checkElement) {
-          positionElementArray.slice(memberOnRow * i, memberOnRow * i + memberOnRow).forEach(element => {
-            element.style.height = '64px';
-          })
-        }
-      }
-
-      const nameElementArray = Array.from(document.querySelectorAll('.team-list-wrap .member-name'));
-      const nameLength = Math.ceil(nameElementArray.length / memberOnRow);
-      /* Check Position Element with height='68px' */
-      for(let i = 0; i < nameLength; i++) {
-        const checkElement = nameElementArray.slice(memberOnRow * i, memberOnRow * i + memberOnRow).some(element => element.offsetHeight === 68);
-        if(checkElement) {
-          nameElementArray.slice(memberOnRow * i, memberOnRow * i + memberOnRow).forEach(element => {
-            element.style.height = '68px';
-          })
-        }
-      }
-    }
   };
 </script>
