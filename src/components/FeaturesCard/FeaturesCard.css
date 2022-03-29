@@ -1,0 +1,230 @@
+.features__card {
+  width: 100%;
+  padding: 40px;
+  background-color: var(--white);
+}
+.features__card:hover {
+  transition: 0.4s ease-in-out;
+  box-shadow: 0px 18px 40px rgb(0 0 0 / 10%);
+}
+.features__card-top {
+  display: flex;
+  gap: 0 24px;
+
+  border-bottom: 1px solid var(--grey);
+  padding-bottom: 32px;
+}
+.features__card-avt {
+  width: 28%;
+}
+.features__card-text {
+}
+.features__card-text h5 {
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 40px;
+  margin-bottom: 8px;
+}
+.features__card-text p {
+  color: var(--blue-black);
+  font-size: 20px;
+  line-height: 32px;
+}
+.features__card-bottom {
+  --spacing: 38px;
+  margin: 0 calc((var(--spacing) * (-1)));
+  padding-top: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px 0;
+}
+.features__card-icon {
+  margin: 0 var(--spacing);
+  width: calc(25% - (var(--spacing) * 2));
+}
+
+.features__card-icon:hover {
+  -webkit-animation: scale-up-center 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: scale-up-center 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+.features__card-icon--status {
+  margin-top: 4px;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: -0.3px;
+  color: var(--blue);
+}
+
+.features__card-icon.disabled > img {
+  opacity: 0.6;
+}
+
+.features__card-icon--text {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
+  text-align: center;
+  margin-top: 12px;
+}
+
+.features__card-bottom.other {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 0 56px;
+}
+
+.features__card-icon.other img {
+  width: 30%;
+}
+
+.features__card-icon.other {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 41%;
+}
+
+@media screen and (max-width: 1365.98px) {
+  .features__card-avt {
+    width: auto;
+  }
+  .features__card-bottom {
+    --spacing: 30px;
+  }
+}
+
+@media screen and (max-width: 1279.98px) {
+  .features__card {
+    padding: 30px;
+  }
+  .features__card-top {
+    padding-bottom: 24px;
+  }
+  .features__card-bottom {
+    --spacing: 20px;
+    padding-top: 24px;
+  }
+  .features__card-text h5 {
+    font-size: 24px;
+    line-height: 34px;
+  }
+  .features__card-text p {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .features__card-icon--status {
+    font-size: 8px;
+  }
+  .features__card-icon--text {
+    font-size: 16px;
+    line-height: 28px;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 1023.98px) {
+  .features__card-icon {
+    width: calc(33.33% - (var(--spacing) * 2));
+  }
+  .features__card-text h5 {
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .features__card-text p {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .features__card-icon.other {
+    width: 40%;
+  }
+  .features__card-icon.other img {
+    width: 58%;
+  }
+  .features__card-icon--text {
+    font-size: 14px;
+    line-height: 25px;
+  }
+}
+
+@media screen and (max-width: 911.98px) {
+  .features__card-top {
+    flex-direction: column;
+  }
+  .features__card-avt {
+    width: 30%;
+    margin-bottom: 24px;
+  }
+  .features__card-icon.other {
+    width: 38%;
+  }
+}
+
+@media screen and (max-width: 819.98px) {
+  .features__card-bottom {
+    --spacing: 38px;
+  }
+  .features__card-icon {
+    width: calc(25% - (var(--spacing) * 2));
+  }
+  .features__card-icon.other {
+    width: 26%;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .features__card {
+    padding: 40px 28px 40px;
+  }
+  .features__card-top {
+    flex-direction: column;
+    padding-bottom: 32px;
+  }
+
+  .features__card-text h5 {
+    letter-spacing: -0.4px;
+  }
+  .features__card-text h5.other {
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 40px;
+  }
+  .features__card-text p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .features__card-bottom {
+    --spacing: 16px;
+    padding-top: 32px;
+  }
+  .features__card-bottom.other {
+    row-gap: 40px;
+  }
+  .features__card-icon.disabled {
+    position: relative;
+  }
+  .features__card-icon--status {
+    font-weight: 400;
+  }
+  .features__card-icon.other {
+    width: 66%;
+  }
+  .features__card-icon.other img {
+    width: 36%;
+  }
+  .features__card-icon--text {
+    margin-top: 12px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media screen and (max-width: 411.98px) {
+  .features__card-bottom {
+    --spacing: 8px;
+  }
+}

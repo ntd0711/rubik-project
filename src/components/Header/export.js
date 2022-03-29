@@ -1,0 +1,12 @@
+export { default as logo } from '../../assets/header_assets/rubik_logo.png';
+export { default as menu_close } from '../../assets/header_assets/close_icon.svg';
+export { default as hero_bg } from '../../assets/header_assets/hero_bg.png';
+export { default as phone } from '../../assets/header_assets/phone.png';
+export { default as app_store } from '../../assets/header_assets/AppStore_logo.svg';
+export { default as ch_play } from '../../assets/header_assets/CHPlay_logo.svg';
+export { default as menu_icon } from '../../assets/header_assets/menu_icon.png';
+export { default as ethereum_logo } from '../../assets/header_assets/ethereum_logo.png';
+export { default as binance_logo } from '../../assets/header_assets/binance_logo.png';
+export { default as crypto_logo_3 } from '../../assets/header_assets/crypto_logo_3.png';
+export { default as crypto_logo_4 } from '../../assets/header_assets/crypto_logo_4.png';
+export { default as crypto_logo_5 } from '../../assets/header_assets/crypto_logo_5.png';

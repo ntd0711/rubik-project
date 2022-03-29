@@ -1,0 +1,51 @@
+.roadmap__period-time {
+  position: relative;
+  height: 116px;
+  font-size: 28px;
+  line-height: 48px;
+  width: 768px;
+  color: var(--black);
+  background-color: var(--yellow-light);
+  padding: 34px 0 34px 25.6px;
+  display: inline-block;
+  align-items: center;
+  margin-bottom: 24px;
+  z-index: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+  white-space: nowrap;
+}
+.roadmap__period-time-before {
+  position: absolute;
+  height: 100%;
+  background-color: var(--yellow);
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+@media screen and (max-width: 1365.98px) {
+  .roadmap__period-time {
+    font-size: 20px;
+    width: 75vw;
+    max-width: 765px;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 1023.98px) {
+  .roadmap__period-time {
+    padding: 28px 0 28px 25.6px;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .roadmap__period-time {
+    width: 74vw;
+    height: 68px;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 22px 0 25px 16px;
+  }
+}

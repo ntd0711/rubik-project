@@ -1,0 +1,64 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: var(--primary-font);
+  background-color: var(--grey-light);
+}
+input,
+button,
+textarea,
+select {
+  font-family: var(--primary-font);
+  font-size: 14px;
+  outline: none;
+  border: 0;
+}
+input {
+  line-height: normal;
+}
+
+.container {
+  max-width: 1440px;
+  padding: 0 96px;
+  margin: 0 auto;
+}
+
+.container__large {
+  max-width: 1440px;
+  padding: 0 68px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1023.98px) {
+  .container {
+    padding: 0 80px;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .container {
+    padding: 0 30px;
+  }
+}
+
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+}
