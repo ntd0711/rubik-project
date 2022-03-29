@@ -13,7 +13,7 @@ import Features from './components/Features/Features.vue';
 import Roadmap from './components/Roadmap/Roadmap.vue';
 import Team from './components/Team/Team.vue';
 import Footer from './components/Footer/Footer.vue';
-import Financial from './components/Financial/financial.vue';
+import Financial from './components/Financial/Financial.vue';
 
 export default {
   name: 'App',
