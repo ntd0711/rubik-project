@@ -16,6 +16,7 @@
 .protocol-img {
   box-shadow: 0px 12px 40px rgba(0, 0, 0, 0.1);
   max-width: 100%;
+  margin: 0 auto;
   object-fit: cover;
   -o-object-fit: cover;
 }
