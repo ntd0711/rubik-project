@@ -8,6 +8,7 @@
   align-items: center;
   cursor: pointer;
   text-align: center;
+  transition: all .4s;
 }
 
 .member:hover {
