@@ -141,11 +141,22 @@ export default {
 }
 @media screen and (max-width: 1024px){
   .footer-heading{
+    width: 100%;
+    padding-top: 150px;
     flex-direction:column;
     align-items:flex-start;
   }
   .fotter-heading_left{
+    width: 100%;
     margin-bottom: 30px;
+  }
+  .footer-heading_right{
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .footer-list{
+    margin-top: 15px;
   }
   .footer-social{
     display: flex;
@@ -154,9 +165,11 @@ export default {
     flex-direction: column;
     margin-top: 30px;
   }
-
 }
 @media screen and (max-width: 768px){
+  .footer-heading {
+    padding-top: 120px;
+  }
   .footer-item_title{
     font-size: 16px;
   }
@@ -168,6 +181,12 @@ export default {
   }
   .footer-subtitle{
     font-size:16px;
+  }
+}
+
+@media screen and (max-width: 479px){
+  .footer-heading {
+    padding-top: 88px;
   }
 }
 </style>

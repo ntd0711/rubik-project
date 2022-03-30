@@ -1,11 +1,13 @@
 <template>
-  <Header />
-  <Features />
-  <Roadmap />
-  <Protocol />
-  <Team />
-  <Financial />
-  <Footer />
+  <div>
+    <Header />
+    <Features />
+    <Roadmap />
+    <Protocol />
+    <Team />
+    <Financial />
+    <Footer />
+  </div>
 </template>
 
 <script>
