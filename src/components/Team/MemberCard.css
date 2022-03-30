@@ -102,6 +102,12 @@
   }
 }
 
+@media screen and (max-width: 959px) {
+  .member {
+    width: calc(50% - 28px);
+  }
+}
+
 /* Tablet */
 @media screen and (max-width: 767px) {
   .member {
