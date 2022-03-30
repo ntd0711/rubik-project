@@ -84,10 +84,9 @@ export default {
   padding-bottom:30px;
 }
 .footer-heading{
-  padding-top: 200px;
+  padding-top: 160px;
   color: var(--white);
   display: flex;
-  align-items: center;
   justify-content:space-between;
 }
 .footer-heading_right{
@@ -142,7 +141,7 @@ export default {
 @media screen and (max-width: 1024px){
   .footer-heading{
     width: 100%;
-    padding-top: 150px;
+    padding-top: 100px;
     flex-direction:column;
     align-items:flex-start;
   }
@@ -168,7 +167,7 @@ export default {
 }
 @media screen and (max-width: 768px){
   .footer-heading {
-    padding-top: 120px;
+    padding-top: 80px;
   }
   .footer-item_title{
     font-size: 16px;
@@ -186,7 +185,7 @@ export default {
 
 @media screen and (max-width: 479px){
   .footer-heading {
-    padding-top: 88px;
+    padding-top: 50px;
   }
 }
 </style>

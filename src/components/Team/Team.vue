@@ -1,5 +1,5 @@
 <template>
-  <div class="team">
+  <div class="team" id="ourteam">
     <h2 class="team-label">Our Team behind Rubik</h2>
     <div class="team-description">
       Our customers and partners vary from local start-ups to Fortune 1000 MNCs all over the world
