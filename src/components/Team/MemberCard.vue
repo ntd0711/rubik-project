@@ -1,6 +1,6 @@
 <!-- Member Template -->
 <template>
-  <li class="member" data-aos="fade-up">
+  <li class="member">
     <img :src="`./src/assets/team_assets/${img}`" alt="member-image" class="member-img" />
     <div class="member-top">
       <div class="member-name">{{name}}</div>

@@ -1,0 +1,231 @@
+.financial {
+  width: 100%;
+  padding: 120px 160px;
+  position: relative;
+}
+
+.financial:after {
+  content: "";
+  display: block;
+  background-color: #010416;
+  clip-path: polygon(0 27%,100% 0,100% 100%,0 100%);
+  -webkit-clip-path: polygon(0 27%,100% 0,100% 100%,0 100%);
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 100%;
+  height: 62%;
+  z-index: 1;
+}
+
+.financial-content {
+  background: linear-gradient(155.51deg,#0f1772 5.31%,#0d2ebd 84.03%);
+  padding: 80px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.financial-content h2 {
+  font-size: 64px;
+  line-height: 72px;
+  font-weight: 600;
+  width: 80%;
+  align-self: flex-start;
+}
+
+.financial-content-img {
+  text-align: center;
+  margin: 85px 0 89px;
+}
+
+.financial-content:before {
+  content: "";
+  display: block;
+  background-color: #010416;
+  border-left: 2px solid #F4F4F4;
+  border-right: 2px solid #F4F4F4;
+  border-bottom: 2px solid #F4F4F4;
+  width: calc(100% - 32px);
+  height: 16px;
+  position: absolute;
+  left: 50%;
+  bottom: -16px;
+  transform: translateX(-50%);
+  box-shadow: 0px 12px 40px rgba(0, 0, 0, 0.1);
+}
+
+.financial-content:after {
+  content: "";
+  display: block;
+  border-left: 2px solid #999FAE;
+  border-right: 2px solid #999FAE;
+  border-bottom: 2px solid #999FAE;
+  width: calc(100% - 64px);
+  height: 16px;
+  position: absolute;
+  left: 50%;
+  bottom: -32px;
+  transform: translateX(-50%);
+  filter: drop-shadow(0px 12px 40px rgba(0, 0, 0, 0.1));
+  z-index: -1;
+}
+
+.financial-button-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.financial-content-cube {
+  transform: rotate(15deg);
+  position: absolute;
+  mix-blend-mode: screen;
+}
+
+.financial-content-cube--specular {
+  top: 50px;
+  right: 10%;
+}
+
+.financial-content-cube--specular2 {
+  top: 274px;
+  right: 4%;
+}
+
+/* Large PC or Laptop */
+@media screen and (max-width: 1199px) {
+  .financial {
+    padding-inline: 100px;
+  }
+}
+
+/* Small PC or Laptop */
+@media screen and (max-width: 1023px) {
+  .financial {
+    padding: 75px 90px;
+  }
+
+  .financial-content {
+    padding: 60px;
+  }
+
+  .financial-content h2 {
+    font-size: 46px;
+    line-height: 64px;
+    width: 90%;
+  } 
+
+  .financial-content-img {
+    width: 200px;
+    margin-block: 75px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .financial {
+    padding: 100px 68px;
+  }
+
+  .financial-content {
+    padding: 50px;
+  }
+
+  .financial-content h2 {
+    font-size: 40px;
+    line-height: 50px;
+    width: 85%;
+  }
+
+  .financial-content-img {
+    width: 170px;
+    margin-block: 60px;
+  }
+
+  .financial-button-list {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .financial-content-cube--specular {
+    width: 100px;
+    height: 90px;
+    top: 74px;
+    right: 12%;
+  }
+
+  .financial-content-cube--specular2 {
+    width: 70px;
+    height: 62px;
+    top: 158px;
+    right: 4.6%;
+  } 
+}
+
+@media screen and (max-width: 575px) {
+  .financial-content {
+    padding: 40px;
+  }
+
+  .financial-content-img {
+    width: 140px;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 479px) {
+  .financial {
+    padding: 48px 40px 64px;
+  }
+
+  .financial-content {
+    padding: 28px;
+  }
+
+  .financial-content h2 {
+    font-size: 22px;
+    line-height: 32px;
+    letter-spacing: -0.4px;
+    width: 90%;
+  }
+
+  .financial-content-img {
+    width: 90px;
+    margin-block: 47px;
+  }
+
+  .financial-content:before {
+    height: 8px;
+    bottom: -8px;
+    border-left: 0.53px solid #F4F4F4;
+    border-right: 0.53px solid #F4F4F4;
+    border-bottom: 0.53px solid #F4F4F4;
+    box-shadow: 0px 3.16071px 10.5357px rgba(0, 0, 0, 0.1);
+  }
+
+  .financial-content:after {
+    height: 8px;
+    bottom: -16px;
+    border-left: 0.53px solid #999FAE;
+    border-right: 0.53px solid #999FAE;
+    border-bottom: 0.53px solid #999FAE;
+    filter: drop-shadow(0px 3.16071px 10.5357px rgba(0, 0, 0, 0.1));
+  }
+
+  .financial-content-cube--specular {
+    width: 57px;
+    height: 53px;
+    top: 74px;
+    right: 8%;
+  }
+
+  .financial-content-cube--specular2 {
+    width: 31px;
+    height: 29px;
+    top: 138px;
+    right: 1.6%;
+  } 
+}

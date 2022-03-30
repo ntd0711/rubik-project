@@ -1,11 +1,13 @@
 <template>
-  <Header />
-  <Features />
-  <Roadmap />
-  <Protocol />
-  <Team />
-  <Financial />
-  <Footer />
+  <div>
+    <Header />
+    <Features />
+    <Roadmap />
+    <Protocol />
+    <Team />
+    <Financial />
+    <Footer />
+  </div>
 </template>
 
 <script>
@@ -15,7 +17,7 @@ import Roadmap from './components/Roadmap/Roadmap.vue';
 import Protocol from './components/Protocol/Protocol.vue';
 import Team from './components/Team/Team.vue';
 import Footer from './components/Footer/Footer.vue';
-import Financial from './components/Financial/financial.vue';
+import Financial from './components/Financial/Financial.vue';
 
 export default {
   name: 'App',

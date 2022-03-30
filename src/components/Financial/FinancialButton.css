@@ -1,0 +1,126 @@
+.financial-button-item {
+  background-color: #fff;
+  width: 224px;
+  padding-block: 15px;
+  color: #1A234A;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+}
+
+.financial-button-item:first-child {
+  background-color: #E3E6E9;
+}
+
+.financial-button-item:not(:first-child) {
+  margin-left: 24px;
+}
+
+.financial-button-item:hover {
+  box-shadow: 0 24px 40px rgb(1 4 22 / 20%);
+}
+
+.financial-button-item-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.financial-button-item i {
+  width: 18px;
+  height: 20px;
+  color: #1A234A;
+}
+
+.financial-button-item .financial-button-item-info {
+  margin-left: 19px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.financial-button-item .financial-button-item-info span {
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* Tablet */
+@media screen and (max-width: 767px) {
+  .financial-button-item-wrap {
+    padding-left: 24%;
+    justify-content: flex-start;
+  }
+
+  .financial-button-item {
+    width: 80%;
+  }
+
+  .financial-button-item:not(:first-child) {
+    margin: 12px 0 0;
+  }
+
+  .financial-button-item img {
+    width: 20px;
+  }
+
+  .financial-button-item .financial-button-item-info {
+    font-size: 17px;
+  }
+
+  .financial-button-item .financial-button-item-info span {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .financial-button-item-wrap {
+    padding-left: 22%;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .financial-button-item-wrap {
+    padding-left: 20%;
+  }
+
+  .financial-button-item {
+    width: 90%;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 479px) {
+  .financial-button-item {
+    padding-block: 10px;
+  }
+
+  .financial-button-item:not(:first-child) {
+    margin: 8px 0 0;
+  }
+
+  .financial-button-item img {
+    width: 18px;
+  }
+
+  .financial-button-item .financial-button-item-info {
+    font-size: 14px;
+  }
+
+  .financial-button-item .financial-button-item-info span {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .financial-button-item-wrap {
+    padding-left: 15%;
+  }
+
+  .financial-button-item {
+    width: 100%;
+  }
+}

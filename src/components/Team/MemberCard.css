@@ -8,6 +8,7 @@
   align-items: center;
   cursor: pointer;
   text-align: center;
+  transition: all .4s;
 }
 
 .member:hover {
@@ -98,6 +99,12 @@
 
   .member-desc {
     font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 959px) {
+  .member {
+    width: calc(50% - 28px);
   }
 }
 
