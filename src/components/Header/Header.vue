@@ -1,36 +1,34 @@
 <template>
   <section class="header" :style="`background-image: url(${hero_bg})`">
-    <ul :class="{ show: isShow }" class="menu">
+    <div ref="menu" :class="{ show: isShow }" class="menu">
       <span @click="isShow = false" class="menu__close">
         <img :src="menu_close" alt="" />
       </span>
-      <div class="container">
-        <ul class="menu__list">
-          <li class="menu__item">
-            <a @click="isShow = false" href="#features" class="menu__link">Features</a>
-          </li>
-          <li class="menu__item">
-            <a @click="isShow = false" href="#protocol" class="menu__link">Protocol</a>
-          </li>
-          <li class="menu__item">
-            <a @click="isShow = false" href="#ourteam" class="menu__link">Our Team</a>
-          </li>
-          <li class="menu__item">
-            <a @click="isShow = false" href="#" class="menu__link">Docs</a>
-          </li>
-          <li class="menu__item">
-            <a @click="isShow = false" href="#" class="menu__link">FAQ</a>
-          </li>
-          <li class="menu__item">
-            <a href="#" class="menu__btn-download">Launch App</a>
-          </li>
-        </ul>
-      </div>
-    </ul>
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a @click="isShow = false" href="#features" class="menu__link">Features</a>
+        </li>
+        <li class="menu__item">
+          <a @click="isShow = false" href="#protocol" class="menu__link">Protocol</a>
+        </li>
+        <li class="menu__item">
+          <a @click="isShow = false" href="#ourteam" class="menu__link">Our Team</a>
+        </li>
+        <li class="menu__item">
+          <a @click="isShow = false" href="#" class="menu__link">Docs</a>
+        </li>
+        <li class="menu__item">
+          <a @click="isShow = false" href="#" class="menu__link">FAQ</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__btn-download">Launch App</a>
+        </li>
+      </ul>
+    </div>
     <div class="navbar__wrapper">
       <div class="container">
         <div class="navigation">
-          <a href="#"><img class="logo" :src="logo" alt="" /></a>
+          <a class="logo" href="#"><img :src="logo" alt="" /></a>
           <ul class="navigation__menu">
             <li class="navigation__menu-item">
               <a href="#features" class="navigation__menu-link">Features</a>
@@ -49,7 +47,7 @@
             </li>
           </ul>
           <a href="#" class="navbar__btn">Launch App</a>
-          <span @click="isShow = !isShow" class="menu__open">
+          <span ref="menuOpen" class="menu__open" @click="isShow = true">
             <img :src="menu_icon" alt="" />
           </span>
         </div>
@@ -146,6 +144,15 @@ export default {
       crypto_logo_4,
       crypto_logo_5,
     };
+  },
+  methods: {
+    handleClick(e) {
+      if (!this.$refs.menu.contains(e.target) && !this.$refs.menuOpen.contains(e.target))
+        this.isShow = false;
+    },
+  },
+  mounted() {
+    window.addEventListener('click', this.handleClick);
   },
 };
 </script>
